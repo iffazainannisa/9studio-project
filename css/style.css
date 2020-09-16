@@ -1,0 +1,327 @@
+/** Font **/
+/* @import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet&display=swap'); */
+
+:root {
+	--Snigle-font: "Snigle", cursive;
+	--Rubik: "Rubik", cursive;
+	--Patua: "Patua One", cursive;
+	--lobster: "Lobster", cursive;
+	--Acme: "Acme", cursive;
+	--light-black: #2e2c2caf;
+	--light-gray: rgba(255, 255, 255, 0.1);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+header {
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+header .container .col-md-12 {
+	margin-top: 10%;
+	color: white;
+}
+
+header .container .col-md-12 h2 {
+	font-family: var(--Rubik);
+	color: #33ccff;
+	font-weight: bold;
+	text-shadow: 4px 2px 2px black;
+}
+
+header .container .col-md-12 h1 {
+	font-family: var(--Rubik);
+	color: yellow;
+	font-weight: bold;
+	text-shadow: 4px 2px 2px black;
+}
+
+header .container .col-md-12 p {
+	font-family: var(--Rubik);
+	font-weight: bold;
+	text-shadow: 4px 2px 2px black;
+}
+
+header .container .col-md-12 img {
+	width: 40vh;
+	height: 37vh;
+	margin-bottom: 4%;
+}
+
+header .container .col-md-12 img:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	-webkit-filter: drop-shadow(3px 1px 13px #00cbfd);
+	filter: drop-shadow(3px 1px 13px #00cbfd);
+}
+
+header .navbar-brand span {
+	color: #fff;
+	font-weight: bold;
+	/* font-family: var(--Snigle-font); */
+
+}
+
+.navbar-toggler .fas {
+	color: white;
+}
+
+.navbar-brand {
+	padding-top: 0.8%;
+	padding-left: 6em;
+}
+
+.nav-link {
+	font-size: 12pt;
+}
+
+/*.nav-link:hover {
+	color: black;
+	background-color: #fff;
+} */
+
+
+header .navbar {
+	font-size: 12px;
+	font-weight: bold;
+	background-color: rgb(44, 58, 73);
+}
+
+header .nav-item:last-child {
+	padding-right: 5.5em;
+}
+
+header .nav-item {
+	padding: 0.2em;
+	cursor: pointer;
+}
+
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	background: white;
+	min-width: 160px;
+	box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-menu a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-menu a:hover {
+	background: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.sticky {
+	position: fixed;
+	top: 10;
+	width: 100%;
+	z-index: 1;
+}
+
+.garis {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	width: 150px;
+	height: 2px;
+	background: black;
+}
+
+#page1 .container h2 {
+	margin-top: 2%;
+	font-size: 17pt;
+}
+
+#page1 .col-md-9 .card {
+	margin-top: 10%;
+}
+
+#page1 .col-md-3 .card {
+	margin-top: 33%;
+}
+
+
+#page1 .col-md-3 .card a {
+	text-decoration: none;
+	color: white;
+}
+
+#page1 .col-md-3 .card p {
+	line-height: 10px;
+}
+
+#page1 .col-md-3 .card a:hover {
+	text-decoration: none;
+	color: black;
+	background-color: white;
+}
+
+#page1 p {
+	text-align: justify;
+}
+
+#page1 img {
+	width: 70%;
+}
+
+#page1 h2 {
+	font-family: var(--Acme);
+}
+
+#page1 h2 span {
+	color: #1a5174;
+	font-weight: bold;
+}
+
+#page1 h2 span:hover {
+	color: #fc9b13;
+	cursor: pointer;
+}
+
+/*profile*/
+.profil {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 285px;
+	text-align: center;
+	font-family: arial;
+}
+
+.profil h4{
+	margin-top: 3%;
+}
+.profil .title {
+	color: grey;
+	font-size: 12px;
+	padding-top: -3%;
+	padding-left: 25%;
+}
+
+.profil button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+.profil a {
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+}
+
+.profil button:hover,
+a:hover {
+	opacity: 0.7;
+}
+
+/* footer */
+.footer-copyright {
+	background-color: rgb(44, 58, 73);
+	color: white;
+	background-size: cover;
+}
+
+footer {
+	width: 100%;
+}
+
+#page1 .pre {
+	width: 20%;
+}
+
+#page1 .next {
+	float: right;
+	width: 20%;
+}
+
+#page1 .btn {
+	margin-bottom: 4%;
+	margin-top: 2%;
+}
+
+/*daftar isi*/
+#page1 .card-header {
+	font-family: var(--Snigle-font);
+	text-transform: uppercase;
+}
+
+.nav a {
+	color: white;
+}
+
+.nv {
+	font-size: 20px;
+	/* background-color: #EE7E32; */
+	position: absolute;
+	padding-top: 2% !important;
+	padding-bottom: 2%;
+	z-index: 1;
+	transition: 0.5s ease;
+
+}
+
+.nv2 {
+	/* font-size: 20px; */
+	z-index: 1 !important;
+	position: fixed !important;
+	top: 0px !important;
+	/* z-index: 0 !important; */
+	/* background-color: teal !important; */
+	background-color: rgba(52, 73, 94, 1);
+	padding-top: 0% !important;
+	padding-bottom: 0% !important;
+}
+
+.nav-down {
+	display: none !important;
+}
+
+.nav-up {
+	display: block !important;
+}
+
+.ripple {
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.4);
+	transform: scale(0);
+	position: absolute;
+	opacity: 1;
+}
+
+.rippleEffect {
+	animation: rippleDrop .6s linear;
+}
+
+@keyframes rippleDrop {
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+
+svg{
+
+}

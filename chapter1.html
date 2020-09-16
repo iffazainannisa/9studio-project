@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chapter #1</title>
+	<meta charset="utf-8">
+    <link rel="shortcut icon" href="image/logo.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/codebox.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile-style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
+		integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header style="background-image:url(image/back1.png)">
+		<div class="container-fluid p-0 nv">
+			<nav class="navbar-expand-lg nav">
+				<a class="navbar-brand" href="#">
+					<img src="image/logo.png" width="40" height="30" class="d-inline-block align-top"
+						alt=""><span>Studio</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span><i class="fas fa-bars"></i></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<div class="mr-auto"></div>
+
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link btn-effect" href="index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link btn-effect" href="#chapter">Chapter
+							</a>
+
+						</li>
+						<li class="nav-item">
+							<a class="nav-link btn-effect" href="#about">About Us</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="image/js.png">
+					<h1>CHAPTER #1</h1>
+					<h2>Tutorial Dasar Javascript</h2>
+					<p>Pemrograman Javascript: Langkah Awal Belajar Javascript</p>
+				</div>
+			</div>
+		</div>
+		<!--isi header-->
+	</header>
+	<main>
+		<section id="page1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<!--materi1-->
+						<div id="materi1"></div>
+						<div class="card bg-light mb-3" style="max-width: 100%;">
+							<div class="card-body">
+								<center>
+									<h2>Langkah Awal Belajar <span> Javascript</span></h2>
+								</center>
+								<center>
+									<div class="garis"></div>
+								</center>
+								<p>Javascript adalah bahasa pemrograman yang wajib kamu pelajari jika ingin mendalami dunia web development.
+								</p><p>
+								Saat ini javascript tidak hanya digunakan di sisi client (browser) saja. Javascript juga digunakan pada server, console, program desktop, mobile, IoT, game, dan lain-lain.</p>
+								<p>Pada kesempatan ini, kita akan belajar Javascript dari dasar. Mulai dari pengenalan Javascript, hingga membuat program pertama dengan Javascript.</p>
+								
+								<h5>Apa itu javascript? </h5>
+								<p>Javascript adalah bahasa pemrograman yang awalnya dirancang untuk berjalan di atas browser.
+
+Namun, seiring perkembangan zaman, javascript tidak hanya berjalan di atas browser saja. Javascript juga dapat digunakan pada sisi Server, Game, IoT, Desktop, dsb.
+
+Javascript awalnya bernama Mocha, lalu berubah menjadi LiveScript saat browser Netscape Navigator 2.0 rilis versi beta (September 1995). Namun, setelah itu dinamai ulang menjadi Javascript.</p>
+
+								<h5>Peralatan untuk Belajar Javascript</h5>
+								<p>Apa saja perlatan yang harus disiapkan untuk belajar Javascript?
+								<ol type="1">
+									<li>Web Browser (Google Chrome, Firefox, Opera, dll)</li>
+									<li>Teks Editor (rekomendasi: VS Code)</li>
+								</ol>
+								</p>
+
+								<h5>Mengenal Console JavaScript</h5>
+								<p>Console Javascript dapat kita buka melalui <b>Inspect Element->Console.</b></p>
+
+								<img src="https://1.bp.blogspot.com/-FD6HeYH6W1g/VPv78Cv1smI/AAAAAAAABfc/az9NjFpgt8E/s1600/Console%2Bjavascript%2Bdi%2Bmozilla%2Bfirefox.png"><br><br>
+								
+								<p>Di dalam console, kita bisa menulis fungsi atau kode-kode javascript dan hasilnya akan langsung ditampilkan.</p>
+
+								<p>Misalnya, mari kita coba kode berikut:</p>
+
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+								<div class="codeheader" id="codeheader_js">JS</div>
+									<div id="codebox">
+										<pre>console.log("Hi apa kabar!");
+alert("Saya sedang belajar javascript");
+</pre>
+									</div>
+								</div>
+
+
+								<p>Maka hasilnya:</p>
+								<img src="https://d33wubrfki0l68.cloudfront.net/429220e43634f529563897766f68e659fb8ad374/7bc6e/img/js/console-js.png"><br><br>
+								<p>Jika kamu menggunakan Nodejs, maka cara mengakses console adalah dengan mengetik perintah node pada Terminal.</p>
+								<img src="https://d33wubrfki0l68.cloudfront.net/891816ca18ae5cd113f9101c6d13b0b49c56e288/d7d17/img/js/console-nodejs.png"><br><br>
+								<p>Setelah mencoba console Javascript, maka dapat kita simpulkan:
+								<ul type="circle">
+									<li>Console bisa digunakan untuk mengujicoba fungsi atau kode Javascript.</li>
+									<li>Console dapat kita gunakan untuk melihat pesan error saat debugging program.</li>
+								</ul>
+								</p>
+
+								<h5>Membuat Program Javascript Pertama</h5>
+								<p>Mari kita buat program pertama dengan Javascript.</p>
+								<p>
+								Silahkan buka teks editor, kemudian buat file baru bernama hello_world.html dan isi dengan kode berikut:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">HTML</div>
+									<div id="codebox">
+										<pre><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Hello World Javascript&lt;/title&gt;
+	&lt;script&gt;
+	console.log("Saya belajar Javascript");
+        document.write("Hello World!");
+	&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+									</div>
+								</div>
+								<p>Jika kamu menggunakan teks editor VS Code, maka akan terlihat seperti ini:</p>
+								
+								<img src="https://d33wubrfki0l68.cloudfront.net/4259bdde028023254018111a0f2e2abf9182ae76/cd102/img/js/vscode-js.png"><br><br>
+								
+								<p>Silahkan disimpan dengan nama hello_world.html, kemudian buka file tersebut dengan web browser. Maka hasilnya:</p>
+								<img src="https://d33wubrfki0l68.cloudfront.net/45ca09eac040ef2c8dfce225cbffac60e3ef6e07/1f081/img/js/hello-world.png"><br><br>
+
+								<p>Perintah atau fungsi console.log() akan menampilkan pesan ke dalam console javascript. Sedangkan perintah document.write() berfungsi untuk menulis ke dokumen HTML, maka dia akan ditampilkan kesana.</p>
+
+								<p>Sekarang coba saja buka console javascript.</p>
+
+								<p>Maka kita akan melihat pesan "Saya belajar Javascript":</p>
+
+								<img src="https://d33wubrfki0l68.cloudfront.net/1e37955bdc97d6f6ffe47775f9c52476981ed755/56ab3/img/js/hello-world-console.png"><br><br>
+
+								<h5>Bagaimana Cara Menulis Kode Javascript di HTML? </h5>
+								<p>Pada contoh di atas, kita sudah menulis kode javascript di dalam HTML.
+
+								Cara tersebut merupakan cara penulisan embeded (ditempel).
+
+								Masih ada beberapa cara lagi yang perlu kita ketahui:
+								<ol type="1">
+									<li>Embed (Kode Javascript ditempel langsung pada HTML. Contoh: yang tadi)</li>
+									<li>Inline (kode Javascript ditulis pada atribut HTML)</li>
+									<li>Eksternal (Kode Javascript ditulis terpisah dengan file HTML)</li>
+								</ol></p>
+								<p>Mari kita lihat contohnya…</p>
+
+								<b>1. Penulisan Kode javascript dengan Embed</b>
+
+								<p>Pada cara ini, kita menggunakan tag &lt;script&gt; untuk menempelkan (embed) kode Javascript pada HTML. Tag ini dapat ditulis di dalam tag &lt;head&gt; dan &lt;body&gt;.</p>
+								Contoh:</p>
+								
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">HTML</div>
+									<div id="codebox">
+										<pre><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Belajar Javascript dari Nol&lt;/title&gt;
+	&lt;script&gt;
+		// ini adalah penulisan kode javascript
+		// di dalam tag &lt;head&gt;
+		console.log("Hello JS dari Head");
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;p&gt; Tutorial Javascript &lt;/p&gt;
+	&lt;script&gt;
+		// ini adalah penulisan kode javascript
+		// di dalam tag &lt;body&gt;
+		console.log("Hello JS dari Body");
+	&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+									</div>
+								</div>
+
+								<p>Banyak yang merekomendasikan menuliskannya di dalam &lt;body&gt;, karena akan membuat web di-load lebih cepat.</p>
+								
+								<p><b>2. Penulisan Kode javascript Inline</b></p>
+
+								<p>Pada cara ini, kita akan menulis kode javascript di dalam atribut HTML. Cara ini biasanya digunakan untuk memanggil suatu fungsi pada event tertentu, misal: saat link diklik.</p>
+								<p>Contoh:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">HTML</div>
+									<div id="codebox">
+										<pre><code data-language="html">&lt;a href="#" onclick="alert('Yey!')"&gt;Klik aku!&lt;/a&gt;
+										</code></pre>
+									</div>
+								</div>
+									
+									<p>atau bisa juga seperti ini:</p>
+									<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">HTML</div>
+									<div id="codebox">
+										<pre><code data-language="html">&lt;a href=" javascript:alert('Yey!')"&gt;Klik aku!&lt;/a&gt;
+										</code></pre>
+									</div>
+								</div>
+									<p>Hasilnya:</p>
+									<img src="https://d33wubrfki0l68.cloudfront.net/26d20b12011b0aa861cfc2956e95a5063ef5a320/42ff1/img/js/inline-js.gif"><br><br>
+
+									<p>Atribut onclick merupakan atribut HTML untuk menyatakan fungsi yang akan dieksekusi saat elemen itu diklik.
+
+Pada contoh di atas, kita menjalankan fungsi alert(). Fungsi ini merupakan fungsi untuk menampilkan dialog.
+
+Lalu pada atribut href, kita juga memanggil fungsi alert() dengan didahului javascript:. Atribut href sebenarnya digunakan untuk mengisi alamat link atau URL.
+</p><p>
+Karena kita ingin memanggil kode javascript di sana, maka alamat link tersebut kita ubah menjadi javascript: lalu diikuti dengan fungsi yang akan dipanggil.</p>
+
+									<p><b>3. Penulisan Kode javascript Eksternal</b></p>
+
+									<p>Pada cara ini, kita akan menulis kode javascript secara terpisah dengan file HTML. Cara ini biasanya digunakan pada proyek-proyek besar, karena diyakini—dengan cara ini—dapat lebih mudah mengelola kode project. Mari kita lihat contohnya… </p>
+
+									<p>Kita buat dua file, yaitu: file HTML dan Javascript.</p>
+
+									<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div id="codebox">
+										<pre><code data-language="html">belajar-js/
+├── kode-program.js
+└── index.html</code></pre>
+									</div>
+								</div>
+								<p>Isi dari file kode-program.js:</p>
+
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">JS</div>
+									<div id="codebox">
+										<pre>
+alert("Hello, ini adalah program JS eksternal!");</pre>
+									</div>
+								</div>
+								
+								<p>Isi dari file index.html:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">HTML</div>
+									<div id="codebox">
+										<pre><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Belajar Javascript dari Nol&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;p&gt; Tutorial Javascript &lt;/p&gt;
+
+	&lt;!-- Menyisihkan kode js eksternal -->&gt;
+	&lt;script src="kode-program.js"&gt;
+	&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+									</div>
+								</div>
+								<p>Hasilnya:</p>
+								<img src="https://d33wubrfki0l68.cloudfront.net/d574b3f922927b49b1acc218a9ea695bd8f503fb/dffbe/img/js/js-eksternal.png"><br><br>
+								<p>Sumber: <a href="https://www.petanikode.com/javascript-dasar/" target="_blank">PetaniKode</a></p>
+
+							</div>
+						</div>
+						<a href="chapter2.html"><button type="button" class="btn next btn-outline-success">Next ❯</button></a>
+					</div>
+					<div class="col-md-3" id="chapter">
+						<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+							<div class="card-header" style="text-align: center;">Daftar Isi</div>
+							<div class="card-body">
+								<div class="card-text">
+									<p><a href="chapter1.html"><i class="fas fa-calendar-check"></i> Chapter 1</a></p>
+									<p><a href="chapter2.html"><i class="fas fa-calendar-check"></i> Chapter 2</a>
+									</p>
+									<p><a href="chapter3.html"><i class="fas fa-calendar-check"></i> Chapter 3</a></p>
+									<p><a href="chapter4.html"><i class="fas fa-calendar-check"></i> Chapter 4</a></p>
+									<p><a href="chapter5.html"><i class="fas fa-calendar-check"></i> Chapter 5</a></p>
+								</div>
+							</div>
+						</div>
+						<h4 style="text-align: center; font-weight: bold;">Our Location</h4>
+						<iframe width="285p" height="200vh"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.834139266948!2d110.440896!3d-7.048210999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDInNTMuNiJTIDExMMKwMjYnMjcuMiJF!5e0!3m2!1sid!2sid!4v1438612753848"
+							style="border:none"></iframe>
+						<br /><br />
+						<h4 style="text-align: center; font-weight: bold;">Author's Profile</h4>
+						<div class="profil">
+							<img src="image/faishal.jpg" alt="John" style="width:100%">
+							<h4>M. Faishal Farras</h4>
+							<h6>(24060117130080)</h6>
+							<p class="title">Universitas Diponegoro</p>
+							<div style="margin: 10px 0;">
+								<a href="http://www.instagram.com/mfaishalf"><i class="fab fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+							</div>
+							<p><button>&copy; Kelompok 9</button></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="page-footer font-small blue" id="about">
+		<div class="footer-copyright text-center py-3">&copy; Kelompok 9 :: Anggita - Angger - Faishal - Iffa -
+			Syailendra
+		</div>
+	</footer>
+
+
+	<!-- JS -->
+	<script>
+		//codebox
+		var myApp = angular.module('MyApp', []);
+		myApp.controller('AppCtrl', function ($scope) {
+			$scope.html = "HTML";
+			$scope.js = "JS";
+		});
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+		$(".btn-effect").click(function (e) {
+
+			// Remove any old one
+			$(".ripple").remove();
+
+			// Setup
+			var posX = $(this).offset().left,
+				posY = $(this).offset().top,
+				buttonWidth = $(this).width(),
+				buttonHeight = $(this).height();
+
+			// Add the element
+			$(this).prepend("<span class='ripple'></span>");
+
+
+			// Make it round!
+			if (buttonWidth >= buttonHeight) {
+				buttonHeight = buttonWidth;
+			} else {
+				buttonWidth = buttonHeight;
+			}
+
+			// Get the center of the element
+			var x = e.pageX - buttonWidth / 2;
+			var y = e.pageY - posY - buttonHeight / 2;
+
+
+			// Add the ripples CSS and start the animation
+			$(".ripple").css({
+				width: buttonWidth,
+				height: buttonHeight,
+				top: y + 'px',
+				left: x + 'px'
+			}).addClass("rippleEffect");
+		});
+
+		$(window).scroll(function (e) {
+
+			// add/remove class to navbar when scrolling to hide/show
+			var scroll = $(window).scrollTop();
+
+			if (scroll <= 10) {
+				$('.nv').removeClass("nv2");
+			} else {
+				$('.nv').addClass("nv2");
+				$('.nav').css({
+					"padding-top": "10px important",
+					"padding-bottom": "10px !important"
+				});
+			}
+
+			$(".banner").css({
+				'transform': 'translate(0px, ' + -scroll / 4 + '%)'
+			});
+			$(".jsadalah").css({
+				'transform': 'translate(0px, ' + -scroll / 1.5 + '%)'
+			});
+			console.log(scroll);
+			if (scroll >= 10) {
+				$("#img-js").css({
+					'transform': 'translate(0px, ' + -scroll / 7 + '%)',
+					'transition': '0s'
+				});
+			}
+			//else if (scroll >= 600) {
+			//     $("#img-js").css({
+			//         'transform': 'translate(0px, ' + -scroll / 20 + '%)'
+			//     });
+			//}
+		});
+	</script>
+</body>
+
+</html>

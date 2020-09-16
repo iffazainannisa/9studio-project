@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chapter #3</title>
+	<meta charset="utf-8">
+    <link rel="shortcut icon" href="image/logo.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/codebox.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile-style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
+		integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header style="background-image:url(image/back3.png)">
+		<div class="container-fluid p-0 nv">
+			<nav class="navbar-expand-lg nav">
+				<a class="navbar-brand" href="#">
+					<img src="image/logo.png" width="40" height="30" class="d-inline-block align-top"
+						alt=""><span>Studio</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span><i class="fas fa-bars"></i></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<div class="mr-auto"></div>
+
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link btn-effect" href="index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link btn-effect" href="#chapter">Chapter
+							</a>
+
+						</li>
+						<li class="nav-item">
+							<a class="nav-link btn-effect" href="#about">About Us</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="image/js.png">
+					<h1>CHAPTER #3</h1>
+					<h2>Tutorial Dasar Javascript</h2>
+					<p>Pemrograman Javascript: Cara Menampilkan Output di Javascript</p>
+				</div>
+			</div>
+		</div>
+		<!--isi header-->
+	</header>
+	<main>
+		<section id="page1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<!--materi1-->
+						<div id="materi1"></div>
+						<div class="card bg-light mb-3" style="max-width: 100%;">
+							<div class="card-body">
+								<center>
+									<h2>Menampilkan Output<span> Javascript</span></h2>
+								</center>
+								<center>
+									<div class="garis"></div>
+								</center>
+								<p>Output adalah sebuah tampilan program yang biasanya digunakan untuk memperlihatkan
+									hasil akhir.</p>
+								<p>Output biasanya ditampilkan dalam bentuk teks dengan fungsi print().</p>
+
+								<p>Ada 4 cara menampilkan output pada Javascript : </p>
+
+								<p><b>1.Menggunakan Fungsi console.log()</b></p>
+								<p>Fungsi console.log() adalah fungsi untuk menampilkan teks ke console Javascript.</p>
+								<p>Contoh penggunaan : </p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_js">JS</div>
+									<div id="codebox">
+										<pre>console.log("Hello World!");</pre>
+									</div>
+								</div>
+								<p>Hasilnya : </p>
+								<img src="image/c3_foto01a.png">
+								<p>Fungsi console.log(foto01c.jpg) biasanya digunakan untuk debugging. Karena setiap
+									pesaan error di Javascript
+									ditampilkan di dalam Console.</p>
+								<p>Selain console.log(), terdapat juga beberapa fungsi untuk debugging seperti
+									console.debug(), console.info(),
+									console.error(), console.dir(), dsb.</p>
+								<img src="image/c3_foto01b.png" alt="foto01b">
+								<p>Fungsi-fungsi console ini juga berlaku pada console Nodejs.</p>
+								<img src="image/c3_foto01c.png" alt="foto01c">
+								<br><br>
+
+								<p><b>2. Menggunakan Fungsi alert()</b></p>
+								<p>Fungsi alert() adalah fungsi untuk menampilkan jendela dialog. Fungsi sebenarnya
+									berada pada objek window.</p>
+								<p>Secara lengkap bisa ditulis seperti ini : </p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_js">JS</div>
+									<div id="codebox">
+										<pre>window.alert("Hello World!");</pre>
+									</div>
+								</div>
+								<p>Bisa juga ditulis alert() saja seperti ini : </p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_js">JS</div>
+									<div id="codebox">
+										<pre>alert("Hello World!");</pre>
+									</div>
+								</div>
+								<p>Fungsi alert(), hanya bisa digunakan di dalam browser saja. Sedangkan pada Nodejs
+									fungsi ini tidak ada.</p>
+								<img src="image/c3_foto02a.png" alt="foto02a">
+								<p>Contoh penggunaan fungsi alert() : </p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">HTML</div>
+									<div id="codebox">
+										<pre><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Belajar Javascript&lt;/title&gt;
+	&lt;script&gt;
+		alert("Selamat datang di tutorial belajar Javascript");
+
+		function sayHello(){
+			alert("Hello!");
+		}
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;button onclick="sayHello()"&gt;Klik Aku!&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+									</div>
+								</div>
+								<p>Hasilnya : </p>
+								<img src="image/c3_foto02b.png" alt="foto02b">
+								<br><br>
+
+								<p><b>3. Menggunakan Fungsi document.write()</b></p>
+								<p>Objek document adalah objek yang mewakili dokumen HTML di dalam Javascript.
+								</p>
+								<p>Dalam objek document, terdapat fungsi write() untuk menulis sesuatu ke
+									dokumen HTML.</p>
+								<p>Contoh : </p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">HTML</div>
+									<div id="codebox">
+										<pre><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Belajar Javascript&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;script&gt;
+		document.write("&lt;h1&gt;Hello World!&lt;/h1&gt;");
+		document.write("&lt;hr&gt;");
+		document.write("&lt;p&gt;Saya sedang belajar Javascript&lt;/p&gt;");
+		document.write("di &lt;b&gt;petanikode.com&lt;/b&gt;")
+	&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+									</div>
+								</div>
+								<p>Hasilnya : </p>
+								<img src="image/c3_foto03a.png" alt="foto03a">
+								<p>Selain fungsi write(), objek document juga menyediakan berbagai macam fungsi untuk
+									manipulasi dokumen HTML.</p>
+								<br><br>
+
+								<p><b>4. Menggunakan innerHTML</b></p>
+								<p>innerHTML adalah sebuah atribut di dalam (objek) elemen HTML yang berisi string HTML.
+								</p>
+								<p>Dengan innerHTML, kita dapat menampilkan output ke elemen yang lebih spesifik.</p>
+								<p>Contoh : </p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">HTML</div>
+									<div id="codebox">
+										<pre><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Belajar Javascript&lt;/title&gt;
+	&lt;script&gt;
+	// membuat objek elemen
+	var hasil = document.getElementById("hasil-output");
+
+        // menampilkan output ke elemen hasil
+        hasil.innerHTML = "&lt;p&gt;Aku suka Javascript&lt;/p&gt;";
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Tutorial Javascript untuk Pemula&lt;/h1&gt;
+   	&lt;div id="hasil-output"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+									</div>
+									<p>Hasilnya : </p>
+									<img src="image/c3_foto04a.png" alt="foto04a">
+									<br><br>
+
+									<p><b>Kesimpulan</b></p>
+									<ol>
+										<li>Fungsi console.log() untuk menampilkan output ke console Javascript;</li>
+										<li>Fungsi alert() untuk menampilkan output ke jendela dialog;</li>
+										<li>Fungsi document.write() untuk menulis output ke dokumen HTML;</li>
+										<li>Atribut innerHTML untuk menampilkan output ke elemen HTML yang lebih
+											spesifik.
+										</li>
+									</ol>
+									<p>Sumber: <a href="https://www.petanikode.com/javascript-dasar/" target="_blank">PetaniKode</a></p>
+								</div>
+							</div>
+						</div>
+
+						<a href="chapter2.html"><button type="button" class="btn pre btn-outline-primary">❮ Previous</button></a>
+						<a href="chapter4.html"><button type="button" class="btn next btn-outline-success">Next ❯</button></a>
+					</div>
+					<div class="col-md-3" id="chapter">
+						<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+							<div class="card-header" style="text-align: center;">Daftar Isi</div>
+							<div class="card-body">
+								<div class="card-text">
+									<p><a href="chapter1.html"><i class="fas fa-calendar-check"></i> Chapter 1</a></p>
+									<p><a href="chapter2.html"><i class="fas fa-calendar-check"></i> Chapter 2</a>
+									</p>
+									<p><a href="chapter3.html"><i class="fas fa-calendar-check"></i> Chapter 3</a></p>
+									<p><a href="chapter4.html"><i class="fas fa-calendar-check"></i> Chapter 4</a></p>
+									<p><a href="chapter5.html"><i class="fas fa-calendar-check"></i> Chapter 5</a></p>
+								</div>
+							</div>
+						</div>
+						<h4 style="text-align: center; font-weight: bold;">Our Location</h4>
+						<iframe width="255vh" height="200vh"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.834139266948!2d110.440896!3d-7.048210999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDInNTMuNiJTIDExMMKwMjYnMjcuMiJF!5e0!3m2!1sid!2sid!4v1438612753848"
+							style="border:none"></iframe>
+						<br /><br />
+						<h4 style="text-align: center; font-weight: bold;">Author's Profile</h4>
+						<div class="profil">
+							<img src="image/aku.png" alt="GanGan" style="width:100%">
+							<h4>Angger M. Elegant</h4>
+							<h6>(24060117140089)</h6>
+							<p class="title">Universitas Diponegoro</p>
+							<div style="margin: 10px 0;">
+								<a href="https://www.instagram.com/a.m.elegant"><i class="fab fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+							</div>
+							<p><button>&copy; Kelompok 9</button></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="page-footer font-small blue" id="about">
+		<div class="footer-copyright text-center py-3">&copy; Kelompok 9 :: Anggita - Angger - Faishal - Iffa -
+			Syailendra
+		</div>
+	</footer>
+
+
+	<!-- JS -->
+
+	<!-- <script>
+		//sticky nav
+		window.onscroll = function () {
+			myFunction()
+		};
+		var navbar = document.getElementsByClassName("navbar")[0];
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky");
+				navbar.css({
+					"padding-top": "10px important",
+					"padding-bottom": "10px !important"
+				});
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script> -->
+	<script>
+		//codebox
+		var myApp = angular.module('MyApp', []);
+		myApp.controller('AppCtrl', function ($scope) {
+			$scope.html = "HTML";
+			$scope.js = "JS";
+		});
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+		$(".btn-effect").click(function (e) {
+
+			// Remove any old one
+			$(".ripple").remove();
+
+			// Setup
+			var posX = $(this).offset().left,
+				posY = $(this).offset().top,
+				buttonWidth = $(this).width(),
+				buttonHeight = $(this).height();
+
+			// Add the element
+			$(this).prepend("<span class='ripple'></span>");
+
+
+			// Make it round!
+			if (buttonWidth >= buttonHeight) {
+				buttonHeight = buttonWidth;
+			} else {
+				buttonWidth = buttonHeight;
+			}
+
+			// Get the center of the element
+			var x = e.pageX - buttonWidth / 2;
+			var y = e.pageY - posY - buttonHeight / 2;
+
+
+			// Add the ripples CSS and start the animation
+			$(".ripple").css({
+				width: buttonWidth,
+				height: buttonHeight,
+				top: y + 'px',
+				left: x + 'px'
+			}).addClass("rippleEffect");
+		});
+
+		$(window).scroll(function (e) {
+
+			// add/remove class to navbar when scrolling to hide/show
+			var scroll = $(window).scrollTop();
+
+			if (scroll <= 10) {
+				$('.nv').removeClass("nv2");
+			} else {
+				$('.nv').addClass("nv2");
+				$('.nav').css({
+					"padding-top": "10px important",
+					"padding-bottom": "10px !important"
+				});
+			}
+
+			$(".banner").css({
+				'transform': 'translate(0px, ' + -scroll / 4 + '%)'
+			});
+			$(".jsadalah").css({
+				'transform': 'translate(0px, ' + -scroll / 1.5 + '%)'
+			});
+			console.log(scroll);
+			if (scroll >= 10) {
+				$("#img-js").css({
+					'transform': 'translate(0px, ' + -scroll / 7 + '%)',
+					'transition': '0s'
+				});
+			}
+			//else if (scroll >= 600) {
+			//     $("#img-js").css({
+			//         'transform': 'translate(0px, ' + -scroll / 20 + '%)'
+			//     });
+			//}
+		});
+	</script>
+</body>
+
+</html>

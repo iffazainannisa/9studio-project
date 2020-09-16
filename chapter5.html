@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chapter #5</title>
+	<meta charset="utf-8">
+    <link rel="shortcut icon" href="image/logo.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/codebox.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile-style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
+		integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header style="background-image:url(image/back5.png)">
+		<div class="container-fluid p-0 nv">
+			<nav class="navbar-expand-lg nav">
+				<a class="navbar-brand" href="#">
+					<img src="image/logo.png" width="40" height="30" class="d-inline-block align-top"
+						alt=""><span>Studio</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span><i class="fas fa-bars"></i></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<div class="mr-auto"></div>
+
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link btn-effect" href="index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link btn-effect" href="#chapter">Chapter
+							</a>
+
+						</li>
+						<li class="nav-item">
+							<a class="nav-link btn-effect" href="#about">About Us</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="image/js.png">
+					<h1>CHAPTER #5</h1>
+					<h2>Tutorial Dasar Javascript</h2>
+					<p>Pemrograman Javascript: Mengenal 3 Macam Jendela Dialog pada Javascript</p>
+				</div>
+			</div>
+		</div>
+		<!--isi header-->
+	</header>
+	<main>
+		<section id="page1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<!--materi1-->
+						<div id="materi1"></div>
+						<div class="card bg-light mb-3" style="max-width: 100%;">
+							<div class="card-body">
+								<center>
+									<h2>Jendela Dialog<span> Javascript</span></h2>
+								</center>
+								<center>
+									<div class="garis"></div>
+								</center>
+								<p>Ada tiga macam jendela dialog pada Javascript:
+								<ol type="1">
+									<li>Jendela dialog alert();</li>
+									<li>Jendela dialog confirm();</li>
+									<li>Jendela dialog promp();</li>
+								</ol>
+								<p>Ketiga dialog ini memiliki perilaku dan kegunaan yang berbeda-beda. Untuk lebih jelasnya, mari simak penjelasan berikut ini.</p>
+								<p><b>1. Dialog Alert</b></p>
+								<p>Dialog <b>alert()</b> biasanya digunakan untuk menampilkan sebuah pesan peringatan atau informasi. Fungsi <b>alert()</b> berada dalam objek <b>window</b>. Kita bisa menggunakannya seperti ini:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- JS Box -->
+									<div class="codeheader" id="codeheader_js">JS</div>
+									<div id="codebox">
+										<pre><code data-language="js">window.alert("Hello World!");</code></pre>
+									</div>
+
+								</div>
+								<p>Atau seperti ini:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- JS Box -->
+									<div class="codeheader" id="codeheader_js">JS</div>
+									<div id="codebox">
+										<pre><code data-language="js">alert("Hello kawan");</code></pre>
+									</div>
+								</div>
+								<p>Karena objek <b>window</b> berisfat global, kita boleh tidak menulisnya. Dialog <b>alert()</b> tidak akan mengembalikan nilai apa-apa saat dieksekusi. Mari kita coba:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+								<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">HTML</div>
+									<div id="codebox">
+										<pre><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Dialog Alert&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;script&gt;
+		alert("Selamat datang di tutorial Javascript");
+	&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+									</div>
+								</div>
+								<p>Jika dijalankan pada browser hasilnya sebagai berikut:</p>
+								<img src="image/c5_1.png">
+								<br /> <br />
+								<p>Dialog <b>alert()</b> memiliki satu perameter yang harus diberikan, yaitu: teks yang akan ditampilkan pada dialog. Pada contoh di atas, kita memberikan teks "Selamat datang di tutorial Javascript".</p>
+								<p>Pada HTML, kita bisa masukan fungsi <b>alert()</b> pada atribut <b>onClick</b> agar nanti ditampilkan saat sebuah elemen diklik.</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+								<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">HTML</div>
+									<div id="codebox">
+										<pre><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Dialog Alert&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;button onClick="alert('Tombol diklik')"&gt;Klik Saya&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+									</div>
+								</div>
+								<p>Jika dijalankan pada browser hasilnya sebagai berikut:</p>
+								<img src="image/c5_2.gif">
+								<br /> <br />
+								<p><b>2. Dialog Confirm</b></p>
+								<p>Dialog <b>confirm()</b> digunakan untuk melakukan konfirmasi dalam melakukan tindakan tertentu. Saat kita menghapus sesuatu, maka ada baiknya menampilkan dialog <b>confirm()</b>. Karena tindakan tersebut cukup berbahaya. Dialog confirm dapat dibuat dengan fungsi <b>confirm()</b>.</p>
+								<p>Kita bisa menggunakannya seperti ini:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+								<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">HTML</div>
+									<div id="codebox">
+										<pre><code data-language="html">confirm("Apakah anda yakin akan menghapus?");</code></pre>
+									</div>
+								</div>
+								<p>Dialog <b>confirm()</b> akan mengembalikan nilai true apabila kita memilih tombol OK dan akan mengembalikan nilai false apabila kita memilih Cancel.</p>
+								<p>Nilai kembalian ini dapat kita tampung dalam variabel untuk diproses. Contohnya seperti berikut:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+								<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">HTML</div>
+									<div id="codebox">
+										<pre><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Dialog Confirm&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;script&gt;
+		var yakin = confirm("Apakah kamu yakin akan mengunjungi petanikode?");
+
+        if (yakin) {
+            window.location = "https://www.petanikode.com";
+        } else {
+            document.write("Baiklah, tetap di sini saja ya :)");
+        }
+	&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+									</div>
+								</div>
+								<p>Jika dijalankan pada browser hasilnya sebagai berikut:</p>
+								<img src="image/c5_3.gif">
+								<br /> <br />
+								<p><b>3. Dialog Prompt</b></p>
+								<p>Dialog <b>prompt()</b> berfungsi untuk mengambil sebuah inputan dari pengguna. Dialog <b>prompt()</b> akan mengembalikan sebuah nilai string dari apa yang diinputkan oleh pengguna. Contohnya sebagai berikut :</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+								<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">HTML</div>
+									<div id="codebox">
+										<pre><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Dialog Prompt&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;script&gt;
+		var nama = prompt("Siapa nama kamu?", "");
+		document.write("&lt;p&gt;Hello "+ nama +"&lt;/p&gt;");
+	&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+									</div>
+								</div>
+								<p>Jika dijalankan pada browser hasilnya sebagai berikut:</p>
+								<img src="image/c5_4.gif">
+								<br /> <br />
+								<p>Dialog <b>prompt()</b> memiliki beberapa parameter yang harus diberikan:</p>
+								<ol type="1">
+									<li>Teks yang akan ditampilkan pada form</li>
+									<li>Nilai default untuk field input.</li>
+								</ol>
+								<p>Pada contoh di atas, kita memberikan nilai default-nya berupa string kosong dengan tanda petik ""</p>
+								<p><b>Kapan Waktu yang Tepat Menggunakan Alert, Confirm, dan Prompt?</b></p>
+								<p>Berdasarkan contoh-contoh di atas, kita bisa mengetahui Kapan waktu yang tepat untuk menggunakan <b>alert()</b>, <b>confirm()</b> dan <b>prompt()</b></p>
+								<p>Saat kita hanya ingin <u>menampilkan informasi</u> saja, maka gunakan <b>alert()</b></p>
+								<p>Saat kita ingin <u>jawaban konfirmasi</u> dari pengguna, maka gunakan <b>confirm()</b></p>
+								<p>Apabila kita ingin <u>mengambil data</u> teks dari pengguna, maka gunakan <b>prompt()</b></p>
+								<p>Sumber: <a href="https://www.petanikode.com/javascript-dasar/" target="_blank">PetaniKode</a></p>
+							</div>
+						</div>
+
+						<a href="chapter4.html"><button type="button" class="btn pre btn-outline-primary">❮ Previous</button></a>
+						<!--<a href="chapter1.html"><button type="button" class="btn next btn-outline-success">Next ❯</button></a>-->
+					</div>
+					<div class="col-md-3" id="chapter">
+						<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+							<div class="card-header" style="text-align: center;">Daftar Isi</div>
+							<div class="card-body">
+								<div class="card-text">
+									<p><a href="chapter1.html"><i class="fas fa-calendar-check"></i> Chapter 1</a></p>
+									<p><a href="chapter2.html"><i class="fas fa-calendar-check"></i> Chapter 2</a>
+									</p>
+									<p><a href="chapter3.html"><i class="fas fa-calendar-check"></i> Chapter 3</a></p>
+									<p><a href="chapter4.html"><i class="fas fa-calendar-check"></i> Chapter 4</a></p>
+									<p><a href="chapter5.html"><i class="fas fa-calendar-check"></i> Chapter 5</a></p>
+								</div>
+							</div>
+						</div>
+						<h4 style="text-align: center; font-weight: bold;">Our Location</h4>
+						<iframe width="255vh" height="200vh"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.834139266948!2d110.440896!3d-7.048210999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDInNTMuNiJTIDExMMKwMjYnMjcuMiJF!5e0!3m2!1sid!2sid!4v1438612753848"
+							style="border:none"></iframe>
+						<br /><br />
+						<h4 style="text-align: center; font-weight: bold;">Author's Profile</h4>
+						<div class="profil">
+							<img src="image/iffa.jpg" alt="John" style="width:100%">
+							<h4>Iffa Zainan Nisa</h4>
+							<h6>(24060117130062)</h6>
+							<p class="title">Universitas Diponegoro</p>
+							<div style="margin: 10px 0;">
+								<a href="https://instagram.com/iffaa_19"><i class="fab fa-instagram"></i></a>
+								<a href="https://twitter.com/iffaa_19"><i class="fa fa-twitter"></i></a>
+							</div>
+							<p><button>&copy; Kelompok 9</button></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="page-footer font-small blue" id="about">
+		<div class="footer-copyright text-center py-3">&copy; Kelompok 9 :: Anggita - Angger - Faishal - Iffa -
+			Syailendra
+		</div>
+	</footer>
+
+
+	<!-- JS -->
+
+	<!-- <script>
+		//sticky nav
+		window.onscroll = function () {
+			myFunction()
+		};
+		var navbar = document.getElementsByClassName("navbar")[0];
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky");
+				navbar.css({
+					"padding-top": "10px important",
+					"padding-bottom": "10px !important"
+				});
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script> -->
+	<script>
+		//codebox
+		var myApp = angular.module('MyApp', []);
+		myApp.controller('AppCtrl', function ($scope) {
+			$scope.html = "HTML";
+			$scope.js = "JS";
+		});
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+		$(".btn-effect").click(function (e) {
+
+			// Remove any old one
+			$(".ripple").remove();
+
+			// Setup
+			var posX = $(this).offset().left,
+				posY = $(this).offset().top,
+				buttonWidth = $(this).width(),
+				buttonHeight = $(this).height();
+
+			// Add the element
+			$(this).prepend("<span class='ripple'></span>");
+
+
+			// Make it round!
+			if (buttonWidth >= buttonHeight) {
+				buttonHeight = buttonWidth;
+			} else {
+				buttonWidth = buttonHeight;
+			}
+
+			// Get the center of the element
+			var x = e.pageX - buttonWidth / 2;
+			var y = e.pageY - posY - buttonHeight / 2;
+
+
+			// Add the ripples CSS and start the animation
+			$(".ripple").css({
+				width: buttonWidth,
+				height: buttonHeight,
+				top: y + 'px',
+				left: x + 'px'
+			}).addClass("rippleEffect");
+		});
+
+		$(window).scroll(function (e) {
+
+			// add/remove class to navbar when scrolling to hide/show
+			var scroll = $(window).scrollTop();
+
+			if (scroll <= 10) {
+				$('.nv').removeClass("nv2");
+			} else {
+				$('.nv').addClass("nv2");
+				$('.nav').css({
+					"padding-top": "10px important",
+					"padding-bottom": "10px !important"
+				});
+			}
+
+			$(".banner").css({
+				'transform': 'translate(0px, ' + -scroll / 4 + '%)'
+			});
+			$(".jsadalah").css({
+				'transform': 'translate(0px, ' + -scroll / 1.5 + '%)'
+			});
+			console.log(scroll);
+			if (scroll >= 10) {
+				$("#img-js").css({
+					'transform': 'translate(0px, ' + -scroll / 7 + '%)',
+					'transition': '0s'
+				});
+			}
+			//else if (scroll >= 600) {
+			//     $("#img-js").css({
+			//         'transform': 'translate(0px, ' + -scroll / 20 + '%)'
+			//     });
+			//}
+		});
+	</script>
+</body>
+
+</html>

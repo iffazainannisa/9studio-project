@@ -1,0 +1,199 @@
+@media only screen and (max-width: 1440px){
+	#page1 iframe{
+		width:39vh; 
+		height:35vh;
+	}
+}
+@media only screen and (max-width: 1024px){
+	#page1 iframe{
+		width:40vh; 
+		height:25vh;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.navbar-brand {
+		padding-top: 3%;
+		padding-left: 1em;
+		padding-right: 28em;
+	}
+
+	.navbar-toggler{
+		padding-top: 3%;
+	}
+
+	.nav-link {
+		margin-left: 1em;
+	}
+
+	#page1 iframe{
+		width:28vh; 
+		height:25vh;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	.navbar-brand {
+		padding-top: 3%;
+		padding-left: 1em;
+		padding-right: 11em;
+	}
+
+	.nav-link {
+		font-size: 10pt;
+		margin-left: 1em;
+	}
+
+	.navbar-toggler{
+		padding-top: 3%;
+	}
+
+	header .container .col-md-12 img {
+		width: 40vh;
+		height: 37vh;
+		margin-bottom: 4%;
+		margin-top: 25%;
+	}
+
+	header .container .col-md-12 h1 {
+		font-size: 20pt;
+	}
+
+	header .container .col-md-12 h2 {
+		font-size: 18pt;
+	}
+
+	#page1 .next {
+		width: 30%;
+	}
+
+	#page1 .pre {
+		width: 40%;
+	}
+
+	#page1 .col-md-3 .card {
+		margin-top: 5%;
+		margin-left: 15%;
+	}
+
+	#page1 iframe{
+		margin-left: 15%;
+		width:55vh; 
+		height:40vh;
+	}
+
+	#page1 .profil{
+		margin-left: 15%;
+	}
+}
+
+@media only screen and (max-width: 375px){
+	.navbar-brand {
+		padding-top: 3%;
+		padding-left: 1em;
+		padding-right: 9em;
+	}
+
+	.nav-link {
+		font-size: 10pt;
+		margin-left: 1em;
+	}
+
+	.navbar-toggler{
+		padding-top: 3%;
+	}
+
+	header .container .col-md-12 img {
+		width: 40vh;
+		height: 37vh;
+		margin-bottom: 4%;
+		margin-top: 25%;
+	}
+
+	header .container .col-md-12 h1 {
+		font-size: 20pt;
+	}
+
+	header .container .col-md-12 h2 {
+		font-size: 18pt;
+	}
+
+	#page1 .next {
+		width: 30%;
+	}
+
+	#page1 .pre {
+		width: 40%;
+	}
+
+	#page1 .col-md-3 .card {
+		margin-top: 5%;
+		margin-left: 8%;
+	}
+
+	#page1 iframe{
+		margin-left: 8%;
+		width:55vh; 
+		height:40vh;
+	}
+
+	#page1 .profil{
+		margin-left: 8%;
+	}
+	
+}
+
+@media only screen and (max-width: 320px){
+	.navbar-brand {
+		padding-top: 3%;
+		padding-left: 1em;
+		padding-right: 6em;
+	}
+
+	.nav-link {
+		font-size: 10pt;
+		margin-left: 1em;
+	}
+
+	.navbar-toggler{
+		padding-top: 3%;
+	}
+
+	header .container .col-md-12 img {
+		width: 30vh;
+		height: 27vh;
+		margin-bottom: 4%;
+		margin-top: 25%;
+	}
+
+	header .container .col-md-12 h1 {
+		font-size: 20pt;
+	}
+
+	header .container .col-md-12 h2 {
+		font-size: 18pt;
+	}
+
+	#page1 .next {
+		width: 30%;
+	}
+
+	#page1 .pre {
+		width: 40%;
+	}
+
+	#page1 .col-md-3 .card {
+		margin-top: 5%;
+		margin-left: 0%;
+	}
+
+	#page1 iframe{
+		margin-left: 0%;
+		width:55vh; 
+		height:40vh;
+	}
+
+	#page1 .profil{
+		margin-left: 0%;
+	}
+}

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chapter #4</title>
+	<meta charset="utf-8">
+    <link rel="shortcut icon" href="image/logo.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/codebox.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile-style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
+		integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header style="background-image:url(image/back4.png)">
+		<div class="container-fluid p-0 nv">
+			<nav class="navbar-expand-lg nav">
+				<a class="navbar-brand" href="#">
+					<img src="image/logo.png" width="40" height="30" class="d-inline-block align-top"
+						alt=""><span>Studio</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span><i class="fas fa-bars"></i></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<div class="mr-auto"></div>
+
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link btn-effect" href="index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link btn-effect" href="#chapter">Chapter
+							</a>
+
+						</li>
+						<li class="nav-item">
+							<a class="nav-link btn-effect" href="#about">About Us</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="image/js.png">
+					<h1>CHAPTER #4</h1>
+					<h2>Tutorial Dasar Javascript</h2>
+					<p>Pemrograman Javascript: Variabel dan Tipe Data dalam Javascript</p>
+				</div>
+			</div>
+		</div>
+		<!--isi header-->
+	</header>
+	<main>
+		<section id="page1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<!--materi1-->
+						<div id="materi1"></div>
+						<div class="card bg-light mb-3" style="max-width: 100%;">
+							<div class="card-body">
+								<center>
+									<h2>Variabel dan Tipe Data<span> Javascript</span></h2>
+								</center>
+								<center>
+									<div class="garis"></div>
+								</center>
+								<p>Apa itu variabel? Dan apa pula itu tipe data? </p>
+								<p>Variabel adalah sebuah nama yang mewakili sebuah nilai. Variabel bisa diisi dengan
+									berbagai macam nilai seperti string (teks), number (angka), objek, array, dan sebagainya.</p>
+								<p>Kita bisa ibaratkan, variabel itu seperti wadah untuk menyimpan sesuatu.</p>
+								<img src="image/vimg1.png">
+								<p>Pada kesempatan ini kita akan belajar tentang variabel dan tipe data dalam Javascript. Dimulai
+									dari cara membuat, cara mencetak variabel ke output, mengisi ulang, dan menghapusnya dari
+									memori.</p>
+									
+								<p><b>1. Cara Membuat Variabel di Javascript</b></p>
+								<p>Cara membuat variabel yang umum digunakan di javascript adalah menggunakan kata kunci var
+									lalu diikuti dengan nama variabel dan nilainya.</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_js">JS</div>
+									<div id="codebox">
+										<pre><code data-language="js">
+var title = "Belajar Pemrograman Javascript";</code></pre>
+									</div>
+								</div>
+								<p>Pada contoh di atas, kita membuat variabel bernama <code>title</code> dengan nilai berupa teks
+									 <em>(string)</em>: <code>&quot;Belajar Pemrograman Javascript&quot;</code>.</p>
+								<p>Contoh selanjutnya:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_js">JS</div>
+									<div id="codebox">
+										<pre><code data-language="js">
+var siteName = &quot;Kelompok Sembilan&quot;;
+var url = &quot;mahabumiundip.cf&quot;;
+var visitorCount = 5921; </code></pre>
+											</div>
+										</div>
+								<p>Pada contoh di atas, kita menggunakan huruf besar atau kapital untuk nama variabel yang 
+									terdiri dari dua suku kata. Kenapa tidak menggunakan <i>underscore</i>?</p>
+								<p>Pada Javascript kita dianjurkan menggunakan camelCase dalam penamaan.
+									Boleh-boleh saja menggunakan <em>snake case</em> atau <em>underscore</em> seperti ini:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_js">JS</div>
+									<div id="codebox">
+										<pre><code data-language="js">
+var site_name = &quot;Kelompok Sembilan&quot;;
+var visitor_count = 5921; </code></pre>
+											</div>
+										</div>
+								<p>Hal tersebut tidak akan menjadi masalah, program masih tetap valid. 
+									Namun, mayoritas programmer Javascript menggunakan camelCase.</p>
+								<p>Perlu kamu ketahui juga, selain kata kunci <code>var</code> kita juga bisa membuat variabel 
+										dengan kata kunci <code>let</code> atau tanpa awalan apapun.</p>
+								<p>Contoh:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_js">JS</div>
+									<div id="codebox">
+										<pre><code data-language="js">
+// membuat variabel dengan kata kunci let
+let price = 15000;
+												
+// membuat variabel tanpa awalan apapun
+stock = 12; </code></pre>
+											</div>
+										</div>
+								<p>Apa bedanya yang menggunakan <code>var</code>, <code>let</code> dan yang tanpa awalan?</p>
+								<p>Perbedaannya terletak pada jangkauan dan penggunaanya.</p>
+								<p>Kalau ada satu lagi pertanyaan: &ldquo;Apa yang akan terjadi jika nilai variabel tidak diisi?&rdquo;</p>
+								<p>Jawabannya, variabel akan bernilai <code>undefined</code> (belum ditentukan).</p>
+								<p>Contoh:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_js">JS</div>
+									<div id="codebox">
+										<pre><code data-language="js">
+var x; </code></pre>
+											</div>
+										</div>
+								<p>Maka variabel x akan bernilai <code>undefined</code>.</p>
+
+								<p><b>2. Menampilkan Isi Variabel</b></p>
+								<p>Untuk menampilkan isi variabel, kita bisa memanfaatkan fungsi-fungsi untuk menampilkan output seperti:</p>
+								<ul><li>Fungsi <code>console.log()</code> menampilkan output ke console javascript;</li>
+									<li>Fungsi <code>document.write()</code> menampilkan output ke dokumen HTML;</li>
+									<li>dan Fungsi <code>alert()</code> menampilkan output ke jendela dialog.</li>
+								</ul>
+								<p>Pertama-tama, kita harus membuat file bernama <code>belajar-variabel.html</code>, lalu isi dengan kode berikut:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">HTML</div>
+									<div id="codebox">
+										<pre><code data-language="html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;title&gt;Belajar Variabel dalam Javascript&lt;/title&gt;
+	&lt;script&gt;
+		// membuat variabel
+		var name = &quot;Kelompok Sembilan&quot;;
+		var visitorCount = 50322;
+		var isActive = true;
+		var url = &quot;https://mahabumiundip.cf&quot;;
+		// menampilkan variabel ke jendela dialog (alert)
+		alert(&quot;Selamat datang di &quot; + name);
+											
+		// menampilkan variabel ke dalam HTML
+		document.write(&quot;Nama Situs: &quot; + name + &quot;&lt;br&gt;&quot;);
+		document.write(&quot;Jumlah Pengunjung: &quot; + visitorCount + &quot;&lt;br&gt;&quot;);
+		document.write(&quot;Status Aktif: &quot; + isActive + &quot;&lt;br&gt;&quot;);
+		document.write(&quot;Alamat URL: &quot; + url + &quot;&lt;br&gt;&quot;);
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+												
+			
+&lt;/body&gt;
+&lt;/html&gt; </code></pre>
+									</div>
+								</div>	
+
+								<p>Setelah itu, coba buka dengan browser dan perhatikanlah hasilnya.</p>
+								<img src="image/vcth1.jpg">
+								<p> </p>
+								<img src="image/vcth2.jpg">
+								<p>Arti simbol plus (+) pada contoh di atas adalah menggabungkan, bukan menjumlahkan.</p>
+								
+								<p><b>3. Mengisi Ulang Variabel</b></p>
+								<p>Variabel bersifat <i>mutable</i>, artinya nilai yang tersimpan di dalamnya dapat kita isi ulang (berubah).</p>
+								<p>Contoh:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_html">HTML</div>
+									<div id="codebox">
+											<pre><code data-language="html">
+// mula-mula kita buat variabel dengan isi seperti ini
+var age = 18;
+												
+// lalu kita isi ulang
+age = 21; </code></pre>
+									</div>
+								</div>
+								<p>Kenapa saat mengisi ulang nilai variabel tidak menggunakan kata kunci <code>var</code>?</p>
+								<p>Karena kata kunci <code>var</code> dibutuhkan saat membuat variabel saja. Sedangkan untuk 
+									mengisi ulang, kita cukup tulis seperti di atas.</p>
+								<p>Apabila kita menggunakan kata kunci <code>var</code>, berarti kita membuat variabel baru, 
+									bukan mengisi ulang.</p>
+
+								<p><b>4. Menghapus Variabel</b></p>
+								<p>Penghapusan variabel dalam Javscript memang jarang dilakukan. Namun, untuk program yang membutuhkan 
+									ketelitian dalam alokasi memori, penghapusan variabel perlu dilakukan agar penggunaan memori lebih optimal.</p>
+								<p>Penghapusan variabel dapat dilakukan dengan katakunci <code>delete</code>.</p>
+								<p>Contoh:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_js">JS</div>
+									<div id="codebox">
+										<pre><code data-language="js">
+bookTitle = "Belajar Pemrograman Javascript";
+delete bookTitle; </code></pre>
+									</div>
+								</div>
+								<p>Maka variabel <code>bookTitle</code> akan menghilang dari memori.</p>
+								<p>Penghapusan variabel hanya bisa dilakukan pada variabel yang dibuat tanpa awalan. 
+									Sedangkan variabel yang dibuat dengan kata kunci <code>var</code> dan <code>let</code> akan dihapus otomatis.</p>
+
+								<p><b>5. Mengenal Tipe Data</b></p>
+								<p>Tipe data adalah jenis-jenis data yang bisa kita simpan di dalam variabel.</p>
+								<p>Ada beberapa tipe data dalam pemrograman Javascript:</p>
+								<ul>
+									<li>String (teks)</li>
+									<li>Integer atau Number (bilangan bulat)</li>
+									<li>Float (bilangan Pecahan)</li><li>Boolean</li>
+									<li>Object</li>
+								</ul>
+								<p>Javascript adalah bahasa yang bersifat <em>dynamic typing</em>, artinya kita tidak harus menuliskan 
+									tipe data pada saat pembuatan variabel seperti pada bahasa C, C++, Java, dsb. yang bersifat <em>static typing</em>.</p>
+								<p>Contoh:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_js">JS</div>
+									<div id="codebox">
+										<pre><code data-language="js">
+var name = "Dian";
+var age = 22;
+var single = true; </code></pre>
+									</div>
+								</div>
+								<p>Javascript akan otomatis mengenali tipe data yang kita berikan pada variabel.</p>
+								<p>Pada contoh di atas variabel:</p>
+								<ul>
+									<li><code>name</code> bertipe data String;</li>
+									<li><code>age</code> bertipe data integer;</li>
+									<li>dan <code>single</code> bertipe data boolean.</li>
+								</ul>
+								<p>Hal ini bisa juga kita cek dengan kata kunci <code>typeof</code>.</p>
+								<p>Contoh:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_js">JS</div>
+									<div id="codebox">
+										<pre><code data-language="js">
+typeof name;
+typeof age;
+typeof single; </code></pre>
+									</div>
+								</div>
+
+								<p>Hasilnya saat di <i>Console</i>:</p>
+								<img src="image/vcth3.png">
+
+								<p>Bagaimana cara kita mengenali tipe data selain menggunakan <code>typeof</code>?</p>
+								<p>Kita bisa mengenali melalui cara penulisannya.</p>
+								<p>Contoh:</p>
+								<div ng-app="MyApp" ng-controller="AppCtrl">
+									<!-- HTML Box -->
+									<div class="codeheader" id="codeheader_js">JS</div>
+									<div id="codebox">
+										<pre><code data-language="js">
+// untuk tipe data teks atau string penulisannya selalu diapit dengan tanda petik
+var author = "Petani Kode";
+											
+// sedangkan untuk tipe data number dan boolean tidak diapit dengan tanda petik
+var available = true; // tipe data boolean hanya bernilai true dan false
+var total = 14; </code></pre>
+									</div>
+								</div>
+
+								<p><b>6. Aturan Penulisan Nama Variabel di Javascript</b></p>
+								<p>Ada beberapa aturan penulisan variabel dalam Javascript:</p>
+								<ul>
+									<li><p>Penamaan variabel <strong>tidak boleh</strong> menggunakan angka di depannya.</p>
+									<p>contoh:</p>
+									<div ng-app="MyApp" ng-controller="AppCtrl">
+										<!-- HTML Box -->
+										<div class="codeheader" id="codeheader_js">JS</div>
+										<div id="codebox">
+										<pre><code data-language="js">
+// salah
+var 123nama = "Petanikode";
+												
+// benar
+var nama123 = "Petani Kode"; </code></pre>
+										</div>
+									</div>
+									</li>
+									<li><p>Penamaan variabel <strong>boleh</strong> menggunakan awal underscore.</p>
+										<p>Contoh:</p>
+										<div ng-app="MyApp" ng-controller="AppCtrl">
+											<!-- HTML Box -->
+											<div class="codeheader" id="codeheader_js">JS</div>
+											<div id="codebox">
+												<pre><code data-language="js">
+var_nama = "Petani Kode"; </code></pre>
+											</div>
+										</div>
+									</li>
+									<li><p>Penamaan variabel <strong>dianjurkan</strong> menggunakan camelCase apabila 
+										tediri dari dua suku kata.</p>
+										<p>Contoh:</p>
+										<div ng-app="MyApp" ng-controller="AppCtrl">
+											<!-- HTML Box -->
+											<div class="codeheader" id="codeheader_js">JS</div>
+											<div id="codebox">
+												<pre><code data-language="js">
+var fullName = "Petani Kode"; </code></pre>
+											</div>
+										</div>
+									</li>
+									<li><p>Penamaan variabel <strong>dianjurkan</strong> menggunakan bahasa inggris</p>
+										<p>Contoh:</p>
+										<div ng-app="MyApp" ng-controller="AppCtrl">
+											<!-- HTML Box -->
+											<div class="codeheader" id="codeheader_js">JS</div>
+											<div id="codebox">
+												<pre><code data-language="js">
+var postTitle = "Tutorial Javascript untuk Pemula"; </code></pre>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<p> </p>
+								<h3 id=apa-selanjutnya>Apa Selanjutnya?</h3>
+								<p> </p>
+								<p>Variabel dan tipe data merupakan dua hal dasar yang wajib di pelajari dalam bahasa pemrograman apapun.</p>
+								<p>Pada Javascript, kita tidak harus menuliskan tipe data saat pembuatan variabel, karena Javascript bersifat <em>dynamic typing</em>.</p>
+								<p>Sedangkan pada bahasa pemrograman yang lain seperti C, C++, C#, Java, dan lain-lain, kita harus menuliskan atau mendefinisikan tipe data pada variabel yang dibuat.</p>
+								<p>Sumber: <a href="https://www.petanikode.com/javascript-dasar/" target="_blank">PetaniKode</a></p>
+							</div>
+						</div>
+
+						<a href="chapter3.html"><button type="button" class="btn pre btn-outline-primary">❮ Previous</button></a>
+						<a href="chapter5.html"><button type="button" class="btn next btn-outline-success">Next ❯</button></a>
+					</div>
+					<div class="col-md-3" id="chapter">
+						<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+							<div class="card-header" style="text-align: center;">Daftar Isi</div>
+							<div class="card-body">
+								<div class="card-text">
+									<p><a href="chapter1.html"><i class="fas fa-calendar-check"></i> Chapter 1</a></p>
+									<p><a href="chapter2.html"><i class="fas fa-calendar-check"></i> Chapter 2</a>
+									</p>
+									<p><a href="chapter3.html"><i class="fas fa-calendar-check"></i> Chapter 3</a></p>
+									<p><a href="chapter4.html"><i class="fas fa-calendar-check"></i> Chapter 4</a></p>
+									<p><a href="chapter5.html"><i class="fas fa-calendar-check"></i> Chapter 5</a></p>
+								</div>
+							</div>
+						</div>
+						<h4 style="text-align: center; font-weight: bold;">Our Location</h4>
+						<iframe width="255vh" height="200vh"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.834139266948!2d110.440896!3d-7.048210999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDInNTMuNiJTIDExMMKwMjYnMjcuMiJF!5e0!3m2!1sid!2sid!4v1438612753848"
+							style="border:none"></iframe>
+						<br /><br />
+						<h4 style="text-align: center; font-weight: bold;">Author's Profile</h4>
+						<div class="profil">
+								<img src="image/158204.jpg" style="width:100%">
+							<h4>Anggita Muntaz F.</h4>
+							<h6>(24060117130074)</h6>
+							<p class="title">Universitas Diponegoro</p>
+							<div style="margin: 10px 0;">
+								<a href="#"><i class="fab fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+							</div>
+							<p><button>&copy; Kelompok 9</button></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="page-footer font-small blue" id="about">
+		<div class="footer-copyright text-center py-3">&copy; Kelompok 9 :: Anggita - Angger - Faishal - Iffa -
+			Syailendra
+		</div>
+	</footer>
+
+
+	<!-- JS -->
+
+	<!-- <script>
+		//sticky nav
+		window.onscroll = function () {
+			myFunction()
+		};
+		var navbar = document.getElementsByClassName("navbar")[0];
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky");
+				navbar.css({
+					"padding-top": "10px important",
+					"padding-bottom": "10px !important"
+				});
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script> -->
+	<script>
+		//codebox
+		var myApp = angular.module('MyApp', []);
+		myApp.controller('AppCtrl', function ($scope) {
+			$scope.html = "HTML";
+			$scope.js = "JS";
+		});
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+		$(".btn-effect").click(function (e) {
+
+			// Remove any old one
+			$(".ripple").remove();
+
+			// Setup
+			var posX = $(this).offset().left,
+				posY = $(this).offset().top,
+				buttonWidth = $(this).width(),
+				buttonHeight = $(this).height();
+
+			// Add the element
+			$(this).prepend("<span class='ripple'></span>");
+
+
+			// Make it round!
+			if (buttonWidth >= buttonHeight) {
+				buttonHeight = buttonWidth;
+			} else {
+				buttonWidth = buttonHeight;
+			}
+
+			// Get the center of the element
+			var x = e.pageX - buttonWidth / 2;
+			var y = e.pageY - posY - buttonHeight / 2;
+
+
+			// Add the ripples CSS and start the animation
+			$(".ripple").css({
+				width: buttonWidth,
+				height: buttonHeight,
+				top: y + 'px',
+				left: x + 'px'
+			}).addClass("rippleEffect");
+		});
+
+		$(window).scroll(function (e) {
+
+			// add/remove class to navbar when scrolling to hide/show
+			var scroll = $(window).scrollTop();
+
+			if (scroll <= 10) {
+				$('.nv').removeClass("nv2");
+			} else {
+				$('.nv').addClass("nv2");
+				$('.nav').css({
+					"padding-top": "10px important",
+					"padding-bottom": "10px !important"
+				});
+			}
+
+			$(".banner").css({
+				'transform': 'translate(0px, ' + -scroll / 4 + '%)'
+			});
+			$(".jsadalah").css({
+				'transform': 'translate(0px, ' + -scroll / 1.5 + '%)'
+			});
+			console.log(scroll);
+			if (scroll >= 10) {
+				$("#img-js").css({
+					'transform': 'translate(0px, ' + -scroll / 7 + '%)',
+					'transition': '0s'
+				});
+			}
+			//else if (scroll >= 600) {
+			//     $("#img-js").css({
+			//         'transform': 'translate(0px, ' + -scroll / 20 + '%)'
+			//     });
+			//}
+		});
+	</script>
+</body>
+
+</html>
